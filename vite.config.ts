@@ -4,18 +4,12 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/KARTHICK_PORTFOLIO/',
+  base: './',
 
   plugins: [
     react(),
     tailwindcss(),
   ],
-
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
 
   assetsInclude: ['**/*.svg', '**/*.csv'],
 })
